@@ -27,7 +27,7 @@ and committing. Verify your changes in a browser window and sanity-check the imp
 
 The full text of the procedure is as follows:
 
-CREATE DEFINER=`orahistory`@`localhost` PROCEDURE `generate_ohms_objects`()
+`CREATE DEFINER=`orahistory`@`localhost` PROCEDURE `generate_ohms_objects`()
 BEGIN
 
 -- vars for end-state handler (done) and ID placeholder
@@ -77,5 +77,5 @@ REPEAT
 	VALUES(ID, 'Item', 94, 0, @ohms_object_text);
 UNTIL done END REPEAT;
 CLOSE ids_wo_ohms_obj;
-END
+END`
 
